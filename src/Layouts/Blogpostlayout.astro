@@ -1,0 +1,26 @@
+---
+const { frontmatter } = Astro.props;
+import Baselayout from "./Baselayout.astro";
+---
+<style>
+    p{font-size: 1.6em;}
+    h1{font-size: 3em}
+    figcaption{font-size: 1em}
+    html {width : 100%}
+</style>
+<Baselayout>
+        <div class="blogheader">
+            <div><h1>{frontmatter.title}</h1></div>
+            <div><p> {frontmatter.author} - {frontmatter.Date.toString().slice(0,10)}</p></div>
+            <figure class=couverture> <img src={frontmatter.image.src} alt={frontmatter.image.alt} />
+                    <figcaption>{frontmatter.caption}</figcatpion>
+                    </figure>
+        </div>
+        <div class="content">
+            <slot />
+        </div>
+        <div class = "Tags">
+            <!-- <a href={"/tag/§{tag}"} class="badge">{tag}</a>-->
+        </div>
+    </div>
+</Baselayout>

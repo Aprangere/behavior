@@ -1,0 +1,710 @@
+---
+import Baselayout from "../Layouts/Baselayout.astro";
+import pp from "../assets/me.jpg";
+import {Image} from "astro:assets";
+const pagetitle = "Home Page"
+---
+
+<Baselayout>
+<body class="relative min-h-screen bg-gray-100">
+
+ <!-- FR Button with translucent #FF8C69 -->
+  <a href="/indexfr"
+     class="fixed top-4 left-4 bg-[rgba(252,179,157,0.85)] text-white text-sm font-semibold px-3 py-1 rounded shadow hover:bg-[rgba(255,140,105,1)] transition">
+    FR
+  </a>
+</body>
+    <main>
+        <section id="hero" class="new-hero-layout">
+            <div class="absolute top-0 left-0 w-24 h-24 bg-pink-100 opacity-50 transform -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+            <div class="absolute bottom-0 right-0 w-32 h-32 bg-pink-100 opacity-50 transform translate-x-1/2 translate-y-1/2 rounded-full"></div>
+
+            <div class="hero-content">
+                <div class="profile-image-wrapper">
+                    <img src="me.jpg" alt="Arman Prangere Profile" class="profile-picture" />
+                </div>
+
+                <div class="text-and-socials">
+                    <h1 class="hero-name">Arman Prangere</h1> {/* Added your name here */}
+                    <p class="intro-text">
+                        Real behavior. Better decisions. Measurable results.
+                    </p>
+                    <p class="intro-text-secondary">
+                        I combine behavioral science with strategic thinking to help you drive meaningful change.
+Whether you want to improve customer engagement, shape better policies, or build a stronger culture, I bring science-backed insights to help you get there.
+                    </p>
+                  <div class="icon-links">
+                    <a href="mailto:arman.behavior@gmail.com">
+                        <img src="mail.png" alt="Email">
+                    </a>
+                    <a href="https://www.linkedin.com/in/arman-prangere-1224791a6/" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://substack.com/@armanphil" target="_blank">
+                        <img src="substack.svg" alt="Substack">
+                    </a>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="content-sections">
+            <section class="section-card">
+                <h2>About</h2>
+                <p class="mb-2">
+                My name is Arman, I'm fascinated by how people think, decide, and act. That curiosity led me to study Social Sciences and Philosophy. Today, I’m diving deeper into the science of the mind as a Cognitive Science Master’s student at École Normale Supérieure – PSL.
+                </p>
+                <p class="mb-2">
+                I spend most of my time reading. I love learning new things and making connections across disciplines. This habit enables me to see challenges from multiple perspectives and ask the questions other may miss.
+                </p>
+                <p class="mb-2">
+                Strategy and experimentation follow me outside of work too — wether I am playing board games or exploring with new sounds on the guitar.
+                </p>
+                <figure style="text-align: center;">
+                <img src="guitar.jpg" alt="Playing guitar at a concert in 2023" class="music-picture">
+                <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Playing guitar at a concert in 2023</figcaption>
+                </figure>
+                <a href="#contact" class="action-button orange-button">Let's work together</a>
+            </section>
+
+            <section class="section-card">
+                <h2>Services</h2>
+                <p class="mb-4">I provide flexible, scalable solutions adapted to your unique challenges and budget. I can help you. </p>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>Align your strategy with real human behavior</li>
+                    <li>Gain deeper insights into your customers’ decision-making processes</li>
+                    <li>Improve organizational culture and motivation </li>
+                    <li>Design behavioral nudges to foster positive change</li>
+                </ul>
+                <br/>
+<p class="mb-4">I adapt every engagement to your needs. Here’s what that might look like:</p>
+<div class="space-y-4">
+
+    <details>
+        <summary class="text-lg font-semibold cursor-pointer">💬 Free 15-min call</summary>
+        <p class="mt-1 ml-4">Let’s talk! You’ll get a quick sense of my approach — and whether it fits your goals.</p>
+    </details>
+
+    <details>
+        <summary class="text-lg font-semibold cursor-pointer">🔍 Behavioral Audit</summary>
+        <p class="mt-1 ml-4">I analyze your problem, review relevant literature, and deliver science-backed, immediately actionable recommendations.</p>
+    </details>
+
+    <details>
+        <summary class="text-lg font-semibold cursor-pointer">🧪 Experimentation & Testing</summary>
+        <p class="mt-1 ml-4">I design and run experiments using qualitative and quantitative methods — like A/B testing, interviews, and behavioral mapping.</p>
+    </details>
+
+    <details>
+        <summary class="text-lg font-semibold cursor-pointer">📅 Monthly Retainer</summary>
+        <p class="mt-1 ml-4">Think of me as your embedded behavioral strategist. I help you define long-term positioning and adapt to evolving challenges with consistency and clarity.</p>
+    </details>
+
+</div>
+<p class="mt-4">Not sure what you need? Let’s explore it together. <a href="#contact" class="action-button orange-button">Book a call</a></p>
+<p> I adapt pricing based on the deliverables. I value my work 60£ an hour </p>
+</div>
+
+<section class="section-card">
+    <section class="projects">
+        <h2>Past Projects</h2>
+            <div class="projects-grid">
+      
+      <div class="project-card">
+        <h3>Reducing Drop-off in Online Applications</h3>
+        <p class="context">Voluntary</p>
+        <p class="description">
+          Redesigned onboarding flow using A/B testing and behavioral nudges, leading to a 20% increase in completion rates.
+        </p>
+        <ul class="methods">
+          <li>A/B Testing</li>
+          <li>Behavioral Mapping</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Improving Donation Flow</h3>
+        <p class="context">NGO · 2022</p>
+        <p class="description">
+          Applied choice architecture and message framing to increase donations by 15%.
+        </p>
+        <ul class="methods">
+          <li>Choice Architecture</li>
+          <li>Framing</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <br/>
+                <p class="mb-4">I blend evidence from neuroscience, psychology, economics and philosophy to test what works for you and turn ideas into growth. </p>
+                <a href="#contact" class="action-button orange-button">Book a free discovery call</a>
+            </section>
+
+            <section class="section-card">
+<section class="bg-gray-50 py-16 px-6">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">What my Clients Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <div class="flex items-center space-x-4 mb-4">
+          <img src="https://i.pravatar.cc/100?img=1" alt="Client 1" class="w-12 h-12 rounded-full">
+          <div>
+            <h4 class="font-semibold text-lg">Jane Doe</h4>
+            <p class="text-sm text-gray-500">Marketing Manager</p>
+          </div>
+        </div>
+        <p class="text-gray-700">"This team exceeded our expectations. The project was delivered on time with exceptional quality!"</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <div class="flex items-center space-x-4 mb-4">
+          <img src="https://i.pravatar.cc/100?img=2" alt="Client 2" class="w-12 h-12 rounded-full">
+          <div>
+            <h4 class="font-semibold text-lg">John Smith</h4>
+            <p class="text-sm text-gray-500">Startup Founder</p>
+          </div>
+        </div>
+        <p class="text-gray-700">"Professional, creative, and truly dedicated. Highly recommend their services!"</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <div class="flex items-center space-x-4 mb-4">
+          <img src="https://i.pravatar.cc/100?img=3" alt="Client 3" class="w-12 h-12 rounded-full">
+          <div>
+            <h4 class="font-semibold text-lg">Emily Nguyen</h4>
+            <p class="text-sm text-gray-500">UX Designer</p>
+          </div>
+        </div>
+        <p class="text-gray-700">"Their attention to detail and communication made the whole process smooth and enjoyable."</p>
+      </div>
+
+    </div>
+  </div>
+</section> 
+</section>          
+
+            <section id="contact" class="section-card">
+                <h2>Ready to bring behavioral insight to your strategy?</h2>
+                <p class="mb-4">Let’s chat!</p>
+
+                <div class="calendly-inline-widget" data-url="https://calendly.com/arman-behavior/30min" style="min-width:320px;height:630px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </section>
+        </div>
+    </main><footer class="site-footer">
+  <div class="footer-content">
+    <nav class="footer-nav">
+                  <div class="icon-links">
+                    <a href="mailto:arman.behavior@gmail.com">
+                        <img src="mail.png" alt="Email">
+                    </a>
+                    <a href="https://www.linkedin.com/in/arman-prangere-1224791a6/" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://substack.com/@armanphil" target="_blank">
+                        <img src="substack.svg" alt="Substack">
+                    </a>
+                    </div>
+    </nav>
+    <br/>
+      <p>© 2025 Arman Prangere</p>
+  </div>
+</footer>
+</div>
+
+<style>
+    /* EXISTING STYLES FROM YOUR ORIGINAL FILE */
+    #background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        filter: blur(100px);
+    }
+
+    #container {
+        font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+        height: 100%;
+    }
+
+    main {
+        height: 100%;
+        display: flex;
+        flex-direction: column; /* Changed to column to stack hero and content */
+        justify-content: flex-start; /* Align content to start */
+    }
+
+    #hero {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    /* Original H1 styling, might be overridden by .hero-name */
+    h1 {
+        font-size: 22px;
+        margin-top: 0.25em;
+    }
+
+    #links {
+        display: flex;
+        gap: 16px;
+    }
+
+    #links a {
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        color: #111827;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    #links a:hover {
+        color: rgb(78, 80, 86);
+    }
+
+    #links a svg {
+        height: 1em;
+        margin-left: 8px;
+    }
+
+    #links a.button {
+        color: white; /* Changed from original to better match image buttons */
+        background: white; /* Will be overridden by new styles for image-like buttons */
+        box-shadow:
+            inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+            inset 0 -2px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        border: 1px solid #ccc; /* Added border for button look */
+        color: #4b5563; /* Text color for these buttons */
+        padding: 10px 15px; /* Adjusted padding */
+    }
+
+    #links a.button:hover {
+        color: #111827; /* Darker on hover */
+        box-shadow: none;
+        background-color: #f0f0f0; /* Light background on hover */
+    }
+
+    pre {
+        font-family:
+            ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
+            monospace;
+        font-weight: normal;
+        background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0 0 1em;
+        font-weight: normal; /* Existing Astro starter style */
+        color: #111827; /* Existing Astro starter style */
+        font-size: 22px; /* Existing Astro starter style */
+    }
+
+    p {
+    color: #000000; /* black text */
+    font-size: 18px; /* slightly bigger */
+    line-height: 28px; /* adjusted line height for readability */
+    letter-spacing: normal; /* optional */
+    margin: 0;
+}
+
+    code {
+        display: inline-block;
+        background:
+            linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
+            linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        padding: 6px 8px;
+    }
+
+    .box {
+        padding: 16px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 16px;
+        border: 1px solid white;
+    }
+
+    
+    .projects-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .project-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
+    /* REMOVED #news STYLES */
+
+
+    @media screen and (max-height: 368px) {
+        /* Removed #news display: none */
+    }
+
+    @media screen and (max-width: 768px) {
+        #container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #hero.new-hero-layout {
+            flex-direction: column; /* Stack image and text on small screens */
+            padding-top: 40px; /* Adjust padding for mobile */
+            text-align: center;
+        }
+
+        .hero-content {
+            flex-direction: column; /* Stack profile image and text block */
+            align-items: center;
+        }
+
+        .profile-image-wrapper {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .text-and-socials {
+            text-align: center; /* Center text on small screens */
+            margin-left: 0; /* Remove left margin */
+            margin-right: 0; /* Remove right margin */
+        }
+
+        .top-social-icons {
+            justify-content: center;
+        }
+
+        .bottom-social-buttons {
+            justify-content: center; /* Center buttons on small screens */
+            margin-top: 20px; /* Add space below the hero content */
+        }
+
+        /* Removed original h1 styling for small screens to prevent conflict with .hero-name */
+        h1 {
+            font-size: inherit; /* Reset to default */
+            line-height: inherit; /* Reset to default */
+        }
+    }
+
+    /* NEW STYLES TO ACHIEVE THE IMAGE LOOK */
+    main {
+        background-color: #transparent; /* Light background for the overall main content area */
+        padding: 40px 0; /* Padding for the entire main content */
+        margin: 0 auto; 
+    }
+
+    #hero.new-hero-layout {
+        background-color: #ffffff; /* White background for the hero card */
+        border-radius: 16px; /* Rounded corners for the card */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        max-width: 800px; /* Max width similar to the image */
+        margin: 40px auto; /* Center the hero card and add vertical space */
+        padding: 40px; /* Internal padding */
+        display: flex;
+        flex-direction: column; /* Stack content within hero */
+        align-items: center; /* Center content horizontally */
+        position: relative; /* For background shapes */
+        overflow: hidden; /* Hide overflowing background shapes */
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column; /* Changed to column for image on top */
+        align-items: center; /* Center horizontally */
+        width: 100%;
+        margin-bottom: 30px; /* Space between top content and bottom buttons */
+    }
+
+    .profile-image-wrapper {
+        flex-shrink: 0;
+        margin-left: 0; /* No left margin when stacked */
+        margin-bottom: 20px; /* Space below the image */
+        margin-top: 0; /* Reset nudge up */
+    }
+
+    .profile-picture {
+        width: 120px; /* Size of the circular image */
+        height: 120px;
+        border-radius: 50%; /* Make it circular */
+        object-fit: cover; /* Ensure image covers the area */
+        border: 4px solid white; /* White border as in image */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for image */
+    }
+
+   .music-picture {
+    width: 400px;         /* Slightly smaller width */
+    height: 500px;        /* Rectangular shape */
+    border-radius: 8px;   /* Soft corners instead of circular */
+    object-fit: cover;    /* Ensure image fills the box */
+    object-position: bottom; /* Crops from the top */
+    border: 2px solid white; /* Slightly thinner border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: auto;
+}
+
+    .text-and-socials {
+        flex-grow: 1;
+        text-align: center; /* Center text when stacked */
+        margin-right: 0; /* No right margin */
+        width: 100%; /* Take full width */
+    }
+
+    .hero-name {
+        font-size: 2.5rem; /* Larger font size for the name */
+        font-weight: 800; /* Extra bold */
+        color: #1f2937; /* Darker color */
+        margin-top: 0; /* Adjust margin */
+        margin-bottom: 0.5rem;
+    }
+
+    .intro-text {
+        font-size: 1.3rem; /* Equivalent to text-xl */
+        line-height: 1.6; /* leading-relaxed */
+        color: #4b5563; /* text-gray-700 */
+        margin-bottom: 10px; /* Smaller margin */
+    }
+
+    .intro-text-secondary {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        color: #6b7280;
+        margin-bottom: 20px; /* Space below this paragraph */
+    }
+
+    .highlight {
+        color: #ef4444; /* red-500 */
+        font-weight: 600; /* font-semibold */
+    }
+
+    .top-social-icons {
+        display: flex;
+        gap: 1rem; /* space-x-4 */
+        margin-top: 20px; /* Space below the call to action button */
+        justify-content: center; /* Center the icons */
+    }
+
+    .icon-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ef4444; /* red-500 */
+        color: white;
+        padding: 0.75rem; /* p-3 */
+        border-radius: 9999px; /* rounded-full */
+        transition: background-color 0.2s;
+        width: 48px; /* Fixed size for circular button */
+        height: 48px;
+    }
+
+    .icon-button:hover {
+        background-color: #dc2626; /* red-600 */
+    }
+
+    .icon-button svg {
+        width: 1.5rem; /* h-6 */
+        height: 1.5rem; /* w-6 */
+    }
+
+    .bottom-social-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem; /* gap-3 */
+        width: 100%; /* Take full width within the hero card */
+        justify-content: center; /* Center buttons horizontally */
+    }
+
+    .bottom-social-buttons .button {
+        padding: 0.625rem 1.25rem; /* px-5 py-2 */
+        border: 1px solid #d1d5db; /* border border-gray-300 */
+        border-radius: 9999px; /* rounded-full */
+        color: #4b5563; /* text-gray-700 */
+        background-color: #ffffff; /* bg-white */
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    .bottom-social-buttons .button:hover {
+        background-color: #f3f4f6; /* hover:bg-gray-100 */
+        color: #1f2937; /* Darker text on hover */
+    }
+
+    .social-icon-text {
+        margin-left: 0.5rem; /* ml-2 */
+    }
+
+    /* Background shapes */
+    .new-hero-layout::before,
+    .new-hero-layout::after {
+        content: '';
+        position: absolute;
+        background-color: #fce7f3; /* pink-100 */
+        opacity: 0.5;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .new-hero-layout::before {
+        width: 150px;
+        height: 150px;
+        top: -50px;
+        left: -50px;
+        transform: translate(-50%, -50%);
+    }
+
+  .site-footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+    .new-hero-layout::after {
+        width: 200px;
+        height: 200px;
+        bottom: -50px;
+        right: -50px;
+        transform: translate(50%, 50%);
+    }
+
+    /* STYLES FOR YOUR ORIGINAL CONTENT SECTIONS */
+    .content-sections {
+        max-width: 800px; /* Match hero width for consistency */
+        margin: 40px auto; /* Center content sections and add space */
+        padding: 0 16px; /* Horizontal padding */
+    }
+
+    .section-card {
+        background-color: #ffffff; /* White background for each section */
+        border-radius: 12px; /* Slightly rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+        padding: 30px;
+        margin-bottom: 30px; /* Space between sections */
+    }
+
+    .section-card h1, .section-card h2 {
+        color: #1f2937; /* Darker heading color */
+        font-weight: 700; /* Bold headings */
+        margin-bottom: 0.75rem;
+    }
+
+    .section-card h1 {
+        font-size: 2.25rem; /* text-4xl */
+    }
+
+    .section-card h2 {
+        font-size: 1.5rem; /* text-2xl */
+    }
+
+    .section-card p {
+        margin-bottom: 1rem; /* Space between paragraphs */
+    }
+
+    .section-card ul {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-card li {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Orange Call to Action Buttons */
+    .call-to-action-button {
+        display: inline-block;
+        background-color: #ffa07a; /* Orange-500 */
+        color: white;
+        padding: 0.75rem 1.5rem; /* More padding for a prominent button */
+        border-radius: 0.5rem; /* More rounded corners */
+        text-decoration: none;
+        transition: background-color 0.2s, transform 0.2s;
+        margin-top: 1.5rem; /* Space above the button */
+        font-weight: 600; /* Semibold text */
+        font-size: 1.1rem; /* Slightly larger text */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    .call-to-action-button:hover {
+        background-color: #ff8c69; /* Orange-600 */
+        transform: translateY(-2px); /* Slight lift on hover */
+    }
+
+    /* General action buttons in content sections, also orange */
+    .action-button {
+        display: inline-block;
+        background-color: #ffa07a; /* Orange-500 */
+        color: white;
+        padding: 0.5rem 1rem; /* px-4 py-2 */
+        border-radius: 0.25rem; /* rounded */
+        text-decoration: none;
+        transition: background-color 0.2s;
+        margin-top: 1rem;
+    }
+
+    .action-button:hover {
+        background-color: #ff8c69; /* Orange-600 */
+    }
+
+    /* Removed .green-button as all action buttons are now orange */
+    /* If you still want a green option, you'd need to re-add its styles and class */
+
+    .contact-info p {
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-info a {
+        color: #3b82f6; /* blue-600 */
+        text-decoration: underline;
+    }
+
+    .contact-info a:hover {
+        color: #2563eb; /* blue-800 */
+    }
+
+    .icon-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.icon-links img {
+  width: 28px;
+  height: 28px;
+  transition: opacity 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.icon-links a:hover img {
+  opacity: 0.75;
+  transform: scale(1.05);
+}
+
+</style>
+	</Baselayout>
